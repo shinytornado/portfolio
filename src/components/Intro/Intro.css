@@ -37,18 +37,26 @@
     letter-spacing: 1px;
 }
 .btn{
-    background: white;
+    font-size: 1.5rem;
+    max-width: 10rem;
+    width: 7.5rem;
     margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background: white;
+    color: black;
     border: none;
-    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    letter-spacing: 1.5px;
 }
-.btnImg{
-    object-fit: cover;
-    height: 1rem;
-    width: 1rem;
-    margin: 0 0.25rem;
+.btn:hover{
+    background: #37FF8B;
+    color: white;
+    border: 3px solid white;
 }
+
 
 @media screen and (max-width: 840px){
     .bg{
