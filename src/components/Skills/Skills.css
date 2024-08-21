@@ -1,0 +1,91 @@
+#skills{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.skillTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+}
+/* .skillDesc{
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+} */
+.skillBars{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 30px;
+    row-gap: 50px;
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: center;
+    color: black;
+}
+.skillBar{
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    background: rgb(255, 255, 255);
+}
+.skillBar:hover .skillBarImg{
+    display: none;
+}
+
+.skillBarImg{
+    object-fit: cover;
+    height: 8rem;
+    width: 8rem;
+}
+
+.skillBar:hover .skill-level {
+    width: 160px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+.skillBar:hover .skill-percent {
+    background-color: #333;
+    height: 100%;
+    transition: 0.5s;
+  }
+#cpp{
+    width: 85%;
+}
+#html{
+    width: 90%;
+  }
+#css{
+    width: 70%;
+  }
+  #js{
+    width: 75%;
+  }
+#mongo{
+    width: 60%;
+  }
+#react{
+    width: 65%;
+  }
+.skill-percent-number{
+    display: none;
+  }
+.skillBar:hover .skill-percent-number {
+    display: contents;
+    font-size: 16px;
+    transition: 0.5s;
+}
+  
