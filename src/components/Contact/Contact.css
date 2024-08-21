@@ -1,0 +1,92 @@
+#contact{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.contactTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+}
+.socialBar{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    gap: 50px;
+    /* row-gap: 50px; */
+    margin: 2rem;
+    width: 100vw;
+    max-width: 50%;
+    text-align: center;
+    background: white;
+    border-radius: 2rem;
+    height: 8.5rem;
+}
+.socials{
+    margin: 1rem;
+    padding: 1.5rem 1.5rem;
+}
+.socialImg{
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+}
+.socialImg:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.sb2{
+    background: white;
+    color: black;
+    display: flex;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    height: 6rem;
+    margin-bottom: 4rem;
+}
+.sb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+}
+.sbImg{
+    height: 3rem;
+    width: 3rem;
+}
+
+@media screen and (max-width: 900px){
+    .socialBar{
+        height: 20rem;
+    }
+    .socialImg{
+        height: 4rem;
+        width: 4rem;
+    }
+    .contactTitle{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .socialImg{
+        height: 3rem;
+        width: 3rem;
+    }
+    .socialBar{
+        height: 40rem;
+    }
+    .sb2{
+        height: 15rem;
+        flex-direction: column;
+        font-size: small;
+    }
+}

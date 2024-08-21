@@ -1,0 +1,53 @@
+#certify{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.certifyTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+}
+.cert{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 30px;
+    row-gap: 50px;
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: center;
+}
+.certi{
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+}
+.certiImg:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.certiS{
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+}
+.certiS img{
+    max-width: 70%;
+}
+.certiImg{
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+}
+
+@media screen and (max-width:480px){
+    .certifyTitle{
+        font-size: 2rem;
+    }
+}
